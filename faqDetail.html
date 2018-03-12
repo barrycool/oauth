@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>常见问题</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="./app.css?v=0731">
+</head>
+<body>
+	<div class="header">
+		<div class="content">
+			<img src="./img/logo1.png" class="logo"/>
+			<span class="title">FAQ</span>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div>
+			<p class="question">
+			</p>
+			<p class="answer">
+
+			</p>
+		</div>
+	</div>
+	<script src="script/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./string/msg.js?v=0731"></script>
+	<script type="text/javascript" src="script/common.js?v=0731"></script>
+	<script type="text/javascript">
+		(function(){
+			$(window).ready(function(){
+				var url = window.location.href;
+				var str = url.split("?")[1].split("&");
+				var id = str[0].split("=")[1];
+				var pid = str[1].split("=")[1];
+				$(".question").html(qa[pid].info[id].q);
+				$(".answer").html(qa[pid].info[id].a);
+			})
+			
+		})()
+	</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WiFi Configuration</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="header">
+		<div class="content">
+			<a href="./index.html"><img src="img/logo.png" class="logo"/></a>
+			<!-- <div class="fr">
+				<input type="text" name="" class="search-input" placeholder="Search">
+			</div> -->
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content main clearfix">
+			<div class="fl lnavbar">
+				<div class="title">
+					Support
+				</div>
+				<ul class="list">
+					<li id="generalli">
+						<div onclick="active('general')">General</div>
+						<ul id="general" class="submenu">
+							<li><a href="./download.html">Download and Install App</a></li>
+							<li><a href="./sign.html">Sign Up Your Account</a></li>
+							<li><a href="./setup.html">Setup Your Home</a></li>
+						</ul>
+					</li>
+					
+					<li  id="universalli" class="active">
+						<div onclick="active('universal')">Universal Remote</div>
+						<ul id="universal" class="submenu">
+							<li><a href="./prepare.html">Prepare Device</a></li>
+							<li><a href="./add.html">Add Device</a></li>
+							<li class="active"><a href="./wifi.html">WiFi Configuration</a></li>
+							<li><a href="./tv.html">Add your TV and STB</a></li>
+						</ul>
+					</li>
+					
+					<li id="workli">
+						<div onclick="active('work')">Work with Alexa</div>
+						<ul id="work" class="submenu">
+							<li><a href="./installAlexa.html">Install Alexa</a></li>
+							<li><a href="./enableSkill.html">Enable Skill</a></li>
+							<li><a href="./linkAccount.html">Link BroadLink Account</a></li>
+							<li><a href="./discover.html">Discover Device</a></li>
+							<li><a href="./sayToAlexa.html">Say to Alexa</a></li>
+						</ul>	
+					</li>
+				</ul>
+			</div>
+			<div class="fl rcontent">
+				<div class="title">
+					WiFi Configuration
+				</div>
+				<div id="desc">
+					<div class="group">
+						<p>If you encountered with product configuration issues, please pay attention to the following checklist:</p>
+						<p>1.     Please make sure you are using our genuine product with official App “Intelligent Home Center” (ihc).
+						</p>
+						<p>2.     Our products support only 2.4G Wi-Fi (does not support 5G). If your home router works in dual bands (both 2.4G and 5G), please switch off 5G signal and try again. After configuration is complete, you can switch back to use dual bands (as shown below).</p>
+						<div class="imgBox">
+							<img src="./img/wifi1.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>3.     If the device Wi-Fi indicator is not off, that means the device cannot join any network. To fix this, you may need to try the following actions:</p>
+						<p>a.     Reset the device (Wi-Fi indicator flashes quickly)</p>
+						<p>b.     Check the Wi-Fi name. It cannot contain space or emoji symbols</p>
+						<p>c.     Check the Wi-Fi password. It should be not more than 32 characters and cannot contain space or emoji symbols</p>
+						<p>d.     Recommend to disable wireless MAC filtering and enable WMM on router (as shown below)</p>
+						<div class="imgBox">
+							<img src="./img/wifi2.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>e.     Do not use IP binding</p>
+						<p>f.    Check if you have too many devices connected to your router (normally a home router can hold no more than 10 devices including smartphones, laptops, smart TVs, IP cameras….)</p>
+						<p>g.     Try to change a channel (as shown below)</p>
+						<div class="imgBox">
+							<img src="./img/wifi3.png">
+						</div>
+					</div>
+					<p>h.     Login to the router to check if the device is connected</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

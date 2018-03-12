@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up Your Account</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="header">
+		<div class="content">
+			<a href="./index.html"><img src="img/logo.png" class="logo"/></a>
+			<!-- <div class="fr">
+				<input type="text" name="" class="search-input" placeholder="Search">
+			</div> -->
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content main clearfix">
+			<div class="fl lnavbar">
+				<div class="title">
+					Support
+				</div>
+				<ul class="list">
+					<li id="generalli" class="active">
+						<div onclick="active('general')">General</div>
+						<ul id="general" class="submenu">
+							<li><a href="./download.html">Download and Install App</a></li>
+							<li class="active"><a href="./sign.html">Sign Up Your Account</a></li>
+							<li><a href="./setup.html">Setup Your Home</a></li>
+						</ul>
+					</li>
+					
+					<li  id="universalli">
+						<div onclick="active('universal')">Universal Remote</div>
+						<ul id="universal" class="submenu">
+							<li><a href="./prepare.html">Prepare Device</a></li>
+							<li><a href="./add.html">Add Device</a></li>
+							<li><a href="./wifi.html">WiFi Configuration</a></li>
+							<li><a href="./tv.html">Add your TV and STB</a></li>
+						</ul>
+					</li>
+					
+					<li id="workli">
+						<div onclick="active('work')">Work with Alexa</div>
+						<ul id="work" class="submenu">
+							<li><a href="./installAlexa.html">Install Alexa</a></li>
+							<li><a href="./enableSkill.html">Enable Skill</a></li>
+							<li><a href="./linkAccount.html">Link BroadLink Account</a></li>
+							<li><a href="./discover.html">Discover Device</a></li>
+							<li><a href="./sayToAlexa.html">Say to Alexa</a></li>
+						</ul>	
+					</li>
+				</ul>
+			</div>
+			<div class="fl rcontent">
+				<div class="title">
+					Sign Up Your Account
+				</div>
+				<div id="desc">
+					<p>If you don't know how to sign in with your email address, please watch the video.</p>
+					<video src="video/logEmail.mp4" controls="controls" poster="img/posterEmail.png">Not support.</video>
+					<p>If you don't know how to sign in with your Facebook credential, please watch the video.</p>
+					<video src="video/logFacebook.mp4" controls="controls" poster="img/posterFacebook.png">Not support.</video>
+					<div class="group">
+						<p>Sign up for ihc account:</p>
+						<p>If you sign up with your email address, we will send you a verification code to this email. Please
+							check your email and input the code and set your password to finish account setup. If you sign
+							up with your cell phone number, the verification code will be sent to your phone as SMS.
+						</p>
+						<p>Note:</p>
+						<p>If you did not receive the verification code, please check your spam mail. If you still cannot
+							receive it, please try again with other email address. If you use phone number to sign up,
+							please check if your cellular network is fine and you may need to check if the SMS is blocked by
+							certain Apps. 
+						</p>
+						<p>If you have a Facebook account, you can also sign in with your Facebook credential. </p>
+						<div class="imgBox">
+							<img src="./img/sign.png">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

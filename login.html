@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Link your Broadlink Intelligent Home Center account</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="shortcut icon" href="./img/broadlink.ico" type="image/x-icon" />
+
+	<!-- pack:css -->
+	<link rel="stylesheet" href="./app.css?v=0803">
+	<!-- endpack -->
+</head>
+<body style="position:relative">
+
+	<div class="loading none" id="loading">
+		<div class="dots">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div id="warn1" class="none">
+		<div class="loading">
+		</div>
+		<div class="modal-wrapper">
+			<div class="modal">
+				<div class="modal-content" id="msg">
+					
+				</div>
+				<div class="modal-footer" id="close">OK</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="warn2" class="none">
+		<div class="loading"  id="blank">
+		</div>
+		<div class="modal-wrapper">
+			<div class="modal">
+				<div class="modal-content">
+					Please make sure your Facebook account has been signed in on ihc  App.
+				</div>
+				<div class="modal-footer" id="jump">Next</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="container">
+		<form name="myForm" autocomplete="off" class="form">
+			<div class="logoBox">
+				<img src="./img/logo.png" class="logoImg">
+			</div>
+			<div class="tips">
+				<p class="tip">Enter the phone number or email address and password created in your Broadlink Intelligent Home Center account. For any account help, please see FAQ below.</p>
+				<!-- <p class="tip">Don't have one? <a class="download">Get the App</a> and sign up an account.</p> -->
+			</div>
+			<div class="loginBox">
+				<div class="loginDiv">
+					<input type="text" name="name" class="loginInput" id="name"  autocomplete="off">
+					<img src="./img/delete.png" class="block" id="delete" />
+				</div>
+				<div class="loginDiv">
+					<input type="password" name="psw" class="loginInput" id="psw" autocomplete="off">
+					<!-- <input type="text" class="loginInput" id="text"> -->
+					<a id="eye" ><img src="./img/open.png" class="block" id="icon" /></a>
+				</div>
+			</div>
+			<button type="button" id="submit" class="loginBtn"></button>
+			<div class="clearfix forget"><a class="ftext fr" id="forget">Forget password?</a></div>
+
+			<div class="divide">
+				<hr/>
+				<span>OR</span>
+				<hr/>
+			</div>
+
+			<div align="center" id="continue">
+				<a id="go" href="javascript:void(0)"><span class="face"></span></a>
+			</div>
+			<div align="center" id="facebook">
+				<a id="logFacebook" href="javascript:void(0)"><span class="face"></span>Log  in  with  Facebook</a>
+			</div>
+		</form>
+		<div class="footer"><a class="ftext" href="./faq.html">FAQ</a><a class="ftext" href="./support">Support</a><a class="ftext" href="https://privacypolicy.ibroadlink.com/privacypolicy/index.html">Privacy</a></div>
+	</div>
+
+
+
+	<script src="script/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./string/en.js?v=0803"></script>
+	<script type="text/javascript" src="./string/msg.js?v=0803"></script>
+	<script type="text/javascript" src="script/common.js?v=0803"></script>
+	<script type="text/javascript" src="script/login.js?v=0803"></script>
+</body>
+</html>

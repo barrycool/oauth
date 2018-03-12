@@ -1,0 +1,161 @@
+body{
+	margin:0;
+}
+*{
+	font-family: "Microsoft Yahei";
+	font-size:14px;
+	color:#4a4a4a;
+}
+a{
+	text-decoration: none;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+　　color:#dbdbdb;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:#dbdbdb;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:#dbdbdb;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color:#dbdbdb;
+}
+.header{
+	background-color: #2e2e2e;
+	line-height: 57px;
+	position:fixed;
+	width:100%;
+	z-index:5;
+}
+.content{
+	max-width:1080px;
+	margin:0 auto;
+}
+.logo{
+	position:relative;
+	top:5px;
+}
+.fr{
+	float:right;
+}
+.fl{
+	float:left;
+}
+.clearfix:after{
+	content:"";
+	line-height: 0;
+	clear:both;
+	display: table;
+}
+.search-input{
+	display: inline-block;
+	height:30px;
+	width:200px;
+	padding:0 10px;
+	background-image:url("img/search.png");
+	background-repeat: no-repeat;
+	background-position: 2%;
+	text-indent: 1em;
+	border:solid 1px #dedee1;
+	font-size:14px;
+}
+.wrapper{
+	background-color: #fafafa;
+	width:100%;
+	padding-top:57px;
+	min-height: 1600px;
+}
+.main{
+	padding:40px 30px;
+	background-color:#fff;
+	min-height:850px;
+}
+.lnavbar{
+	background-color:#f5f5f5;
+	min-width:230px;
+	min-height:613px;
+}
+.title{
+	line-height: 70px;
+	border-bottom:solid 1px #d5d5d5;
+	font-size:25px;
+	padding-left:30px;
+	color:#5d5c5a;
+}
+.lnavbar>ul{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.lnavbar>ul>li{
+	line-height: 40px;
+	padding:5px 30px;
+}
+.lnavbar>ul>li>ul>li>a{
+	color:#4a4a4a;
+	font-size: 14px;
+	display: block;
+}
+.lnavbar>ul>li>ul>li:hover,.lnavbar>ul>li>ul>li.active{
+	background-color:#ddecf4;
+}
+.rcontent{
+	padding-left:50px;
+	max-width:760px;
+}
+.mb30{
+	margin-bottom:30px;
+}
+.rcontent>.title{
+	padding:0;
+}
+video{
+	width:100%;
+	margin-top:15px;
+	margin-bottom: 45px;
+}
+p{
+	line-height: 22px;
+}
+.imgBox{
+	text-align: center;
+	padding-top:35px;
+	padding-bottom: 45px;
+	width:100%;
+}
+img{
+	max-width: 100%;
+}
+td{
+	text-align: left;
+	text-indent: 2em;
+	padding:2px 0;
+}
+th{
+	padding:10px 10px;
+}
+table{
+	border-collapse: collapse;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+ul.list>li>div{
+	background:url('./img/right.png') 95% no-repeat;
+	background-size:0.8em 1em;
+	cursor: pointer;
+}
+ul.list>li.active>div{
+	background:url('./img/bottom.png') 95% no-repeat;
+	background-size:1em 0.8em;
+}
+ul.list>li.active>.submenu{
+	display: block;
+}
+.submenu{
+	text-indent: 1em;
+	display: none;
+}

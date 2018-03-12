@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add your TV and STB</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="header">
+		<div class="content">
+			<a href="./index.html"><img src="img/logo.png" class="logo"/></a>
+			<!-- <div class="fr">
+				<input type="text" name="" class="search-input" placeholder="Search">
+			</div> -->
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content main clearfix">
+			<div class="fl lnavbar">
+				<div class="title">
+					Support
+				</div>
+				<ul class="list">
+					<li id="generalli">
+						<div onclick="active('general')">General</div>
+						<ul id="general" class="submenu">
+							<li><a href="./download.html">Download and Install App</a></li>
+							<li><a href="./sign.html">Sign Up Your Account</a></li>
+							<li><a href="./setup.html">Setup Your Home</a></li>
+						</ul>
+					</li>
+					
+					<li  id="universalli" class="active">
+						<div onclick="active('universal')">Universal Remote</div>
+						<ul id="universal" class="submenu">
+							<li><a href="./prepare.html">Prepare Device</a></li>
+							<li><a href="./add.html">Add Device</a></li>
+							<li><a href="./wifi.html">WiFi Configuration</a></li>
+							<li class="active"><a href="./tv.html">Add your TV and STB</a></li>
+						</ul>
+					</li>
+					
+					<li id="workli">
+						<div onclick="active('work')">Work with Alexa</div>
+						<ul id="work" class="submenu">
+							<li><a href="./installAlexa.html">Install Alexa</a></li>
+							<li><a href="./enableSkill.html">Enable Skill</a></li>
+							<li><a href="./linkAccount.html">Link BroadLink Account</a></li>
+							<li><a href="./discover.html">Discover Device</a></li>
+							<li><a href="./sayToAlexa.html">Say to Alexa</a></li>
+						</ul>	
+					</li>
+				</ul>
+			</div>
+			<div class="fl rcontent">
+				<div class="title">
+					Add your TV and STB
+				</div>
+				<div id="desc">
+					<p>If you don't know how to add TV or STB, please watch the video.</p>
+					<video src="video/addTv.mp4" controls="controls" poster="img/postertv.png">Not support.</video>
+					<div class="group">
+						<p>If it is in first time use, the app will automatically show the type of appliances for you to add a remote. Select the type of the appliances you want to control and add the remote. Take TV as example, if your TV is digital TV (without STB), then tap “TV”, select the brand of TV.</p>
+						<div class="imgBox">
+							<img src="./img/tv/1.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>Then, turn off your TV using physical remote and follow the instructions to start the matching test. During the test, the universal remote will try to send several control commands to the appliance and what you need to do is only to confirm the results. When the test is done, the app will show the remote panel with all buttons mapped to the physical remote.</p>
+						<div class="imgBox">
+							<img src="./img/tv/2.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>If you learn the button by mistake, please tap “…” on the top right of the corner, then tap “Learn” to re-learn the button. Fox example, if VOL + is wrong, tap “Learn again” on the right of the button of “VOL+”, the indicator LED will turn orange. Press “VOL+” on the physical remote toward RM pro, the orange indicator LED will be off, and the button will be re-learn successfully.</p>
+						<div class="imgBox">
+							<img src="./img/tv/3.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>If your TV is with STB, then please learn the TV remote first according to above steps, as you need to turn on/off TV before using STB. Then learn the remote of STB: Tap RM pro in the room, then tap “+”, select “STB”, choose the brand of your STB. Then learn the remote of STB, steps similar with TV remote learning.</p>
+						<div class="imgBox">
+							<img src="./img/tv/4.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>If you cannot find the brand in the list, then you can use “User-defined remote” to learn the
+							button one by one. Tap “+”, the indicator LED will turn orange, please point your remote to RM
+							pro and press the button on physical remote to learn, the orange LED will be off, and the
+							button will be learnt successfully. Name the button and select an icon for it.
+						</p>
+						<div class="imgBox">
+							<img src="./img/tv/5.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>If you would like to voice control the channel by channel name, Tap “CH” in the remote panel,
+						then input the channel name and channel No., then save it. (Only when you complete the
+						account link steps and discover the device in the Alexa App, you can voice control the channel
+						by its name, please go to section III to learn it.)
+						</p>
+						<div class="imgBox">
+							<img src="./img/tv/6.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

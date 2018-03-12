@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Amazon-Alexa authorize</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="shortcut icon" href="./img/broadlink.ico" type="image/x-icon" />
+
+	<!-- pack:css -->
+	<link rel="stylesheet" href="./app.css?v=0731">
+	<!-- endpack -->
+</head>
+<body>
+
+	<div class="loading none" id="loading">
+		<div class="dots">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<div id="warn1" class="none">
+		<div class="loading">
+		</div>
+		<div class="modal-wrapper">
+			<div class="modal">
+				<div class="modal-content" id="msg">
+					
+				</div>
+				<div class="modal-footer" id="close">OK</div>
+			</div>
+		</div>
+	</div>	
+
+	<div id="modify" class="none">
+		<div class="loading">
+		</div>
+		<div class="modal-wrapper">
+			<div class="modal">
+				<div class="modal-content">
+					Your password has been modified successfully !
+				</div>
+				<div class="modal-footer" id="closeModify">OK</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<form name="myForm" autocomplete="off" class="form">
+			<div id="forget" class="mt">
+				<div class="loginBox">
+					<div class="loginDiv">
+						<input type="text" class="loginInput full-width" id="account"  autocomplete="off" placeholder="Please enter your account">
+					</div>
+				</div>
+				<button type="button" id="next" class="loginBtn">Next</button>
+			</div>
+			<div id="find" class="mt">
+				<div class="loginBox" align="center">
+					<p class="large" align="center">Verification code has been sent to:</p>
+					<p id="info" class="ftext"></p>
+					<p class="note">You can request a verification code only 10 times a day.</p>
+					<div class="clearfix">
+						<div class="fl loginDiv">
+							<input type="text" class="loginInput full-width" id="code"  autocomplete="off" placeholder="Verify code">
+						</div>
+						<button type="button" id="get" class="loginBtn fl fontSize">send</button>
+					</div>
+					<div class="loginDiv align-left">
+						<input type="password" name="psw" class="loginInput" id="psw" autocomplete="off" placeholder="New password">
+						<input type="text" class="loginInput" id="text">
+						<a id="eye" ><img src="./img/open.png" class="block" id="icon" /></a>
+					</div>
+				</div>
+				<button type="button" id="submit" class="loginBtn">Confirm</button>
+			</div>
+		</form>
+	</div>
+
+
+
+	<script src="script/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./string/msg.js?v=0731"></script>
+	<script type="text/javascript" src="script/common.js?v=0731"></script>
+	<script type="text/javascript" src="script/forget.js?v=0731"></script>
+</body>
+</html>

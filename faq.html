@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FAQ</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="./app.css?v=0731">
+	<style type="text/css">
+        body{
+            background-color:#f6f4f1;
+        }
+    </style>
+</head>
+<body>
+	<div id="app" class="none">
+		<div class="header">
+			<div class="content">
+				<img src="./img/logo1.png" class="logo"/>
+				<span class="title">FAQ</span>
+			</div>
+		</div>
+		<div class="wrapper pad">
+			<ul class="nav">
+	            <li v-for="(item,pindex) in qa" @click="directives=item.info;title=item.title;" class="tab" v-bind:class="{active:title==item.title}">{{item.title}}</li>
+	        </ul>
+	        <div class="list">
+	            <ul>
+	                <li v-for="(directive,index) in directives" class="directive link"><a @click="jump(index)">{{directive.q}}</a></li>
+	            </ul>
+	        </div>
+		</div>
+	</div>
+	<script src="./string/msg.js"></script>
+	<script src="./script/vue.min.js"></script>
+	<script type="text/javascript">
+		new Vue({
+            el:'#app',
+            data:{
+                qa:qa,
+                title:qa[0].title,
+                directives:qa[0].info,
+            },
+            created:function(){
+                this.fontSize();
+                document.getElementById("app").style.display = 'block';
+                window.addEventListener("resize",this.fontSize(),false);
+            },
+            methods:{
+                fontSize:function() {
+                    var clientWidth = document.getElementsByTagName("html")[0].clientWidth;
+                    if (clientWidth > 414) {
+                        clientWidth = 414;
+                    }
+                    if (!clientWidth) return;
+                    var size = Math.floor(30 * (clientWidth / 750)) + 'px';
+                    document.getElementsByTagName("html")[0].style.fontSize  = size;
+                },
+                jump:function(id){
+                	var pid;
+                	for (var i = qa.length - 1; i >= 0; i--) {
+                		if(qa[i].title == this.title){
+                			pid = i;
+                		}
+                	}
+                	window.location.href="./faqDetail.html?id="+id+"&pid="+pid;
+                }
+            }
+        })
+	</script>
+</body>
+</html>

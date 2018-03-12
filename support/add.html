@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add Device</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="header">
+		<div class="content">
+			<a href="./index.html"><img src="img/logo.png" class="logo"/></a>
+			<!-- <div class="fr">
+				<input type="text" name="" class="search-input" placeholder="Search">
+			</div> -->
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content main clearfix">
+			<div class="fl lnavbar">
+				<div class="title">
+					Support
+				</div>
+				<ul class="list">
+					<li id="generalli">
+						<div onclick="active('general')">General</div>
+						<ul id="general" class="submenu">
+							<li><a href="./download.html">Download and Install App</a></li>
+							<li><a href="./sign.html">Sign Up Your Account</a></li>
+							<li><a href="./setup.html">Setup Your Home</a></li>
+						</ul>
+					</li>
+					
+					<li  id="universalli" class="active">
+						<div onclick="active('universal')">Universal Remote</div>
+						<ul id="universal" class="submenu">
+							<li><a href="./prepare.html">Prepare Device</a></li>
+							<li class="active"><a href="./add.html">Add Device</a></li>
+							<li><a href="./wifi.html">WiFi Configuration</a></li>
+							<li><a href="./tv.html">Add your TV and STB</a></li>
+						</ul>
+					</li>
+					
+					<li id="workli">
+						<div onclick="active('work')">Work with Alexa</div>
+						<ul id="work" class="submenu">
+							<li><a href="./installAlexa.html">Install Alexa</a></li>
+							<li><a href="./enableSkill.html">Enable Skill</a></li>
+							<li><a href="./linkAccount.html">Link BroadLink Account</a></li>
+							<li><a href="./discover.html">Discover Device</a></li>
+							<li><a href="./sayToAlexa.html">Say to Alexa</a></li>
+						</ul>	
+					</li>
+				</ul>
+			</div>
+			<div class="fl rcontent">
+				<div class="title">
+					Add Device
+				</div>
+				<div id="desc">
+					<p>If you don't know how to add device, please watch the video.</p>
+					<video src="video/Configure.mp4" controls="controls" poster="img/posterAdd.png">Not support.</video>
+					<div class="group">
+						<p>Tap “Add device” or Tap “+” in the “Device” page, scan the barcode on the package or tap “Add by categories” to select the category and model manually.</p>
+						<div class="imgBox">
+							<img src="./img/add1.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>Check the Wi-Fi name and input password. Then tap “Next” to add the device. The process may take 20-60 seconds depends on network conditions. Once the configuration is done, the blue Wi-Fi LED will flash slowly then off, choose a room for the device and tap “Done”.</p>
+						<div class="imgBox">
+							<img src="./img/add2.png">
+						</div>
+					</div>
+					<div class="group">
+						<p>Note:</p>
+						<div> 1)  Please keep the device and your phone in good Wi-Fi signal range.</div>
+						<div> 2)  A reset can resolve most issues: Reset your Universal Remote by pressing and holding
+						the reset button through a slim needle for not less than 6s until the blue LED flashes
+						rapidly, then repeat configuration. 
+						</div>
+					</div>
+					<div class="group">
+						<p>If you fail to configure RM pro by the above method, please tap “Try other methods” and follow
+							the in-app wizard to enter AP mode configuration: Press and hold the “Reset” button by a slim
+							needle for not less than 6s till the LED indicator flashes rapidly. Once again, press and hold the
+							"Reset" button by a slim needle till the blue LED indicator flashes slowly at intervals. It indicates
+							the device enters Wi-Fi AP mode. Then connect the W-Fi of your smart phone to RM pro’s AP
+							(Wi-Fi name BroadLinkProv), after connection, switch back to your home Wi-Fi, then RM Pro
+							will enter AP configuration. It will take around 20-60 seconds depends on network conditions.
+							Once the configuration is done, the blue Wi-Fi LED will flash slowly then off, choose a room for
+							the device and tap “Done”
+						</p>
+						<div class="imgBox">
+							<img src="./img/add3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Say to Alexa</title>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<div class="header">
+		<div class="content">
+			<a href="./index.html"><img src="img/logo.png" class="logo"/></a>
+			<!-- <div class="fr">
+				<input type="text" name="" class="search-input" placeholder="Search">
+			</div> -->
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content main clearfix">
+			<div class="fl lnavbar">
+				<div class="title">
+					Support
+				</div>
+				<ul class="list">
+					<li id="generalli">
+						<div onclick="active('general')">General</div>
+						<ul id="general" class="submenu">
+							<li><a href="./download.html">Download and Install App</a></li>
+							<li><a href="./sign.html">Sign Up Your Account</a></li>
+							<li><a href="./setup.html">Setup Your Home</a></li>
+						</ul>
+					</li>
+					
+					<li  id="universalli">
+						<div onclick="active('universal')">Universal Remote</div>
+						<ul id="universal" class="submenu">
+							<li><a href="./prepare.html">Prepare Device</a></li>
+							<li><a href="./add.html">Add Device</a></li>
+							<li><a href="./wifi.html">WiFi Configuration</a></li>
+							<li><a href="./tv.html">Add your TV and STB</a></li>
+						</ul>
+					</li>
+					
+					<li id="workli" class="active">
+						<div onclick="active('work')">Work with Alexa</div>
+						<ul id="work" class="submenu">
+							<li><a href="./installAlexa.html">Install Alexa</a></li>
+							<li><a href="./enableSkill.html">Enable Skill</a></li>
+							<li><a href="./linkAccount.html">Link BroadLink Account</a></li>
+							<li><a href="./discover.html">Discover Device</a></li>
+							<li class="active"><a href="./sayToAlexa.html">Say to Alexa</a></li>
+						</ul>	
+					</li>
+				</ul>
+			</div>
+			<div class="fl rcontent">
+				<div class="title">
+					Say to Alexa
+				</div>
+				<div id="desc">
+					<div class="group">
+						<p>Assume you named your TV in ihc App as “TV”, you can use these commands to control it:</p>
+						<table border="1">
+							<tr>
+								<th rowspan="4">Power control</th>
+								<td>Alexa, turn on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, turn off TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, power on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, power on TV</td>
+							</tr>
+							<tr>
+								<th rowspan="7">Volumn control</th>
+								<td>Alexa, turn up volume by 5 on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, volume up on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, volume down on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, turn up the volume on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, turn down the volume on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, mute on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, unmute on TV</td>
+							</tr>
+							<tr>
+								<th rowspan="4">Channel control</th>
+								<td>Alexa, channel up on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, channel down on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, change channel to 30 on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, change channel to FOX on TV *</td>
+							</tr>
+							<tr>
+								<th rowspan="7">Multimedia control</th>
+								<td>Alexa, play on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, stop on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, resume on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, next on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, next song on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, set rewind on TV</td>
+							</tr>
+							<tr>
+								<td>Alexa, set fast forward on TV</td>
+							</tr>
+						</table>
+						<p>* you need channel setup before using this command</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
