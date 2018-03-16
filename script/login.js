@@ -93,7 +93,7 @@
 
 	$("#jump").click(function(){
 		$("#warn2").hide();
-		var url = 'https://oauthinternational.ibroadlink.com/login.html';
+		var url = 'https://oauth.ai-keys.com/';
 		$("#loading").show();
 		window.location = encodeURI("https://www.facebook.com/dialog/oauth?client_id=1285249481550769&redirect_uri="+url+"&response_type=token");
 	})

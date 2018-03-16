@@ -29,7 +29,7 @@
 
 })();
 
-var serverUrl = 'https://oauth.homesmartdevices.cn/';
+var serverUrl = 'https://oauth.ai-keys.com/';
 
 function http(url,method,dataObj,header){
 	var formdata = JSON.stringify(dataObj);
