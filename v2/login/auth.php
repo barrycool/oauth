@@ -84,13 +84,53 @@ if (!$server->validateAuthorizeRequest($request, $response)) {
   <input type="submit" name="authorized" value="yes">
   <input type="submit" name="authorized" value="no">
 </form>');
-}*/
+}r*/
+function post($url, $post_data = '', $timeout = 5){ 
+    $ch = curl_init();
+    curl_setopt ($ch, CURLOPT_URL, $url);
+    curl_setopt ($ch, CURLOPT_POST, 1); 
+    if($post_data != ''){
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+    }   
+    curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1); 
+    curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+    curl_setopt($ch, CURLOPT_HEADER, false);
+    $file_contents = curl_exec($ch);
+    curl_close($ch);
+    return $file_contents;
+}
+
+$login_form = file_get_contents("php://input");
+$login_json = json_decode($login_form);
+if (!isset($login_json->phone) || !isset($login_json->password)) {
+	die('invalid user name or passwd\n');
+}
+
+/*
+$url = 'http://www.ai-keys.com:8080/smartdevice_cloud_service/mng';
+$login_data = new stdclass();
+$login_data->name_space = 'AccountManagement';
+$login_data->name = 'Login';
+$login_data->loginName = $login_json->phone;
+$login_data->passwd = $login_json->password;
+
+$result = post($url, json_encode($login_data));
+//error_log($result);
+$result_json = json_decode($result);
+if (!isset($result_json->result->code) || $result_json->result->code !== 'OK') {
+	die('invalid user name or passwd\n');
+}
+
+if (!isset($result_json->result->userInfo->userId)) {
+	die('server is not valid\n');
+}
+*/
 
 $_POST['authorized'] = 'yes';
 
 // print the authorization code if the user has authorized your client
 $is_authorized = ($_POST['authorized'] === 'yes');
-$server->handleAuthorizeRequest($request, $response, $is_authorized);
+$server->handleAuthorizeRequest($request, $response, $is_authorized /*, $result_json->result->userInfo->userId*/);
 if ($is_authorized) {
   // this is only here so that you get to see your code in the cURL request. Otherwise, we'd redirect back to the client
   $code = substr($response->getHttpHeader('Location'), strpos($response->getHttpHeader('Location'), 'code=')+5);

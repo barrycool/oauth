@@ -77,6 +77,30 @@ case 'AliGenie.Iot.Device.Discovery':
         extension: {
           link: "https://www.baidu.com"
         }
+      },
+      {
+        deviceId: "light5",
+        deviceName: "灯",
+        deviceType: "light",
+        zone: "",
+        brand: "ZTK",
+        model: "ZTK light",
+        icon: "https://home-assistant.io/demo/favicon-192x192.png",
+        properties: [
+          {
+            status: "off"
+          }
+        ],
+        actions: [
+          "TurnOn",
+          "TurnOff",
+	  "SetBrightness",       
+	  "AdjustBrightness",
+	  "SetTemperature"
+        ],
+        extension: {
+          link: "https://www.baidu.com"
+        }
       }
     ]
   }
